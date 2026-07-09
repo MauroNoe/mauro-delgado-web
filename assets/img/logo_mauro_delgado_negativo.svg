@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 290" width="400" height="290">
+  <rect width="400" height="290" fill="#1B2D4F"/>
+  <defs><style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;display=swap');
+  .nm  { font-family: 'Cormorant Garamond','Lora',Georgia,serif; font-size:28px; font-weight:600; letter-spacing:4px; fill:#F0EDE4; }
+  .tg  { font-family: 'Cormorant Garamond','Lora',Georgia,serif; font-size:11px; font-weight:500; letter-spacing:2px; fill:#C4A97A; }
+  .cr  { font-family: 'Cormorant Garamond','Lora',Georgia,serif; font-size:10px; font-weight:400; letter-spacing:2px; fill:#9A7840; }
+</style></defs>
+  <g transform="translate(90,30)"><path d="M0,136 L60,0 L110,72 L160,0 L220,136" fill="none" stroke="#F0EDE4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+               <line x1="0" y1="136" x2="220" y2="136" stroke="#C4922A" stroke-width="3" stroke-linecap="round"/></g>
+  <text class="nm" x="200" y="202" text-anchor="middle">MAURO DELGADO</text>
+  <line x1="90" y1="218" x2="310" y2="218" stroke="#C4922A" stroke-width="0.8"/>
+  <text class="tg" x="200" y="237" text-anchor="middle">EXECUTIVE COACH &amp; SENIOR CONSULTANT</text>
+  <text class="cr" x="200" y="255" text-anchor="middle">PCC · ICF</text>
+</svg>
