@@ -9,12 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Selector de idioma ES/EN (persistente vía localStorage)
+  // Selector de idioma EN/ES (inglés por defecto, persistente vía localStorage)
   var langBtn = document.querySelector('.lang-switch');
   var html = document.documentElement;
   var saved = localStorage.getItem('md_lang');
   if (saved) { html.setAttribute('lang', saved); }
   updateLangLabel();
+  updateTitle();
 
   if (langBtn) {
     langBtn.addEventListener('click', function () {
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
       html.setAttribute('lang', next);
       localStorage.setItem('md_lang', next);
       updateLangLabel();
+      updateTitle();
     });
   }
 
@@ -30,6 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!langBtn) return;
     var current = html.getAttribute('lang') === 'en' ? 'en' : 'es';
     langBtn.textContent = current === 'es' ? 'EN' : 'ES';
+  }
+
+  function updateTitle() {
+    var current = html.getAttribute('lang') === 'en' ? 'en' : 'es';
+    var title = html.getAttribute('data-title-' + current);
+    if (title) { document.title = title; }
   }
 
   // Año en el footer

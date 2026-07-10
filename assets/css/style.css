@@ -211,11 +211,11 @@ nav.main-nav a:hover { color: var(--gold); }
 .method-line {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 26px 0;
+  padding: 34px 0;
 }
 .method-line-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.method-line p { margin: 0; font-family: var(--sans); color: var(--navy); font-size: 1rem; }
-.method-line a { font-family: var(--sans); font-weight: 700; font-size: 0.85rem; color: var(--gold); white-space: nowrap; }
+.method-line p { margin: 0; font-family: var(--sans); color: var(--navy); font-size: 1.15rem; }
+.method-line a { font-family: var(--sans); font-weight: 700; font-size: 0.95rem; color: var(--gold); white-space: nowrap; }
 
 /* ---------- Cards ---------- */
 .grid { display: grid; gap: 28px; }
@@ -330,8 +330,8 @@ footer.site-footer {
 
 .cima-line-mini {
   display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap;
-  font-family: var(--sans); font-weight: 700; font-size: 0.82rem; color: var(--navy);
-  margin-top: 6px;
+  font-family: var(--sans); font-weight: 700; font-size: 0.95rem; color: var(--navy);
+  margin-top: 8px;
 }
 .cima-line-mini .arrow { color: var(--gold); font-weight: 400; }
 .cima-line-mini .cima-letter { font-size: 1.35em; color: var(--gold); font-weight: 800; }
