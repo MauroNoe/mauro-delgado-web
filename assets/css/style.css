@@ -162,8 +162,8 @@ nav.main-nav a:hover { color: var(--gold); }
 /* ---------- Hero ---------- */
 .hero {
   background:
-    linear-gradient(90deg, rgba(11,37,69,0.97) 0%, rgba(11,37,69,0.90) 38%, rgba(11,37,69,0.55) 62%, rgba(11,37,69,0.30) 100%),
-    url('../img/hero-bg-duotone.jpg');
+    linear-gradient(90deg, rgba(11,37,69,0.45) 0%, rgba(11,37,69,0.25) 30%, rgba(11,37,69,0.05) 55%, rgba(11,37,69,0) 100%),
+    url('../img/hero-bg-color-v3-strong.jpg');
   background-size: cover;
   background-position: right 30%;
   color: var(--white);
@@ -194,13 +194,13 @@ nav.main-nav a:hover { color: var(--gold); }
   font-size: 0.8rem; text-align: center; padding: 20px; letter-spacing: 0.04em;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1080px) {
   .hero {
     background:
-      linear-gradient(180deg, rgba(11,37,69,0.80) 0%, rgba(11,37,69,0.96) 60%, rgba(11,37,69,0.99) 100%),
-      url('../img/hero-bg-duotone.jpg');
+      linear-gradient(180deg, rgba(11,37,69,0.72) 0%, rgba(11,37,69,0.93) 55%, rgba(11,37,69,0.97) 100%),
+      url('../img/hero-bg-color.jpg');
     background-size: cover;
-    background-position: center 30%;
+    background-position: center 20%;
     min-height: 680px;
   }
   .hero-grid > div:first-child { max-width: 100%; }
