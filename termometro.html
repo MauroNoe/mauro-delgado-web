@@ -38,6 +38,14 @@
   </div>
 </section>
 
+<!-- Formulario estático oculto: permite que Netlify detecte el formulario "termometro"
+     en el build, ya que el formulario real se genera por JS y Netlify no puede verlo. -->
+<form name="termometro" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="nombre">
+  <input type="email" name="email">
+  <input type="text" name="bot-field">
+</form>
+
 <section class="section-tight">
   <div class="container">
     <div id="termometro-app" class="term-box"></div>
