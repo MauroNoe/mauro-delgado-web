@@ -40,6 +40,7 @@ const DIMENSIONES = {
 
 let respuestas = {};
 let paso = 0;
+let leadCapturado = null;
 
 function render() {
   const app = document.getElementById("termometro-app");
@@ -119,18 +120,19 @@ function renderCaptura(app) {
     btn.disabled = true;
     btn.textContent = t.sending;
 
-    fetch("/", {
+    fetch(window.location.pathname, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeForm({ "form-name": "termometro", nombre: nombre, email: email }),
+      body: encodeForm({ "form-name": "termometro", nombre: nombre, email: email, "bot-field": "" }),
     })
-      .then(() => {
-        respuestas.nombre = nombre;
-        respuestas.email = email;
+      .then(function (res) {
+        if (!res.ok) { throw new Error("Netlify form submission failed: " + res.status); }
+        leadCapturado = { nombre: nombre, email: email };
         paso++;
         render();
       })
-      .catch(() => {
+      .catch(function (err) {
+        console.error(err);
         btn.disabled = false;
         btn.textContent = t.btn;
         errorEl.style.display = "block";
