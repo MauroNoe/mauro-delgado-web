@@ -86,7 +86,7 @@ function renderCaptura(app) {
   const L = lang();
   const t = L === "en" ? {
     h3: "Almost there. Where should we send your result?",
-    p: "We&rsquo;ll show your result right here on this page.",
+    p: "We&rsquo;ll show your result right here on this page, and also send it to your email.",
     nombre: "Name",
     email: "Email",
     btn: "See my result",
@@ -94,7 +94,7 @@ function renderCaptura(app) {
     error: "Something went wrong. Please try again.",
   } : {
     h3: "Ya casi está. ¿A dónde enviamos tu resultado?",
-    p: "Te mostramos el resultado aquí mismo, en esta página.",
+    p: "Te mostramos el resultado aquí mismo, en esta página, y también te lo enviamos por email.",
     nombre: "Nombre",
     email: "Email",
     btn: "Ver mi resultado",
@@ -128,6 +128,7 @@ function renderCaptura(app) {
       .then(function (res) {
         if (!res.ok) { throw new Error("Netlify form submission failed: " + res.status); }
         leadCapturado = { nombre: nombre, email: email };
+        enviarResultadoPorEmail(nombre, email, L);
         paso++;
         render();
       })
@@ -137,6 +138,32 @@ function renderCaptura(app) {
         btn.textContent = t.btn;
         errorEl.style.display = "block";
       });
+  });
+}
+
+// Envía el resultado por email vía la Netlify Function + Resend.
+// No bloquea la experiencia: si falla, el resultado se sigue mostrando en pantalla igual.
+function enviarResultadoPorEmail(nombre, email, L) {
+  const { perfil, dimMasDebil, dimMasFuerte } = calcularResultado();
+  const practicaTxt = L === "en"
+    ? `In practical terms, this means the people who work with you would likely name your strongest asset as ${DIMENSIONES[dimMasFuerte].en} — and would notice, even if they don't always say so directly, that ${DIMENSIONES[dimMasDebil].en} is where your leadership feels most strained once pressure rises.`
+    : `En términos prácticos, esto significa que las personas que trabajan contigo probablemente nombrarían tu punto más fuerte como ${DIMENSIONES[dimMasFuerte].es} — y notarían, aunque no siempre te lo digan directamente, que ${DIMENSIONES[dimMasDebil].es} es donde tu liderazgo se resiente más en cuanto sube la presión.`;
+
+  fetch("/.netlify/functions/send-resultado-termometro", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      nombre: nombre,
+      email: email,
+      lang: L,
+      perfilNombre: perfil.nombre[L],
+      posicion: perfil.posicion[L],
+      luz: perfil.luz[L],
+      sombra: perfil.sombra[L],
+      practica: practicaTxt,
+    }),
+  }).catch(function (err) {
+    console.error("No se pudo enviar el email del resultado:", err);
   });
 }
 
