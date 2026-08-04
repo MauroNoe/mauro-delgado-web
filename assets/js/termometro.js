@@ -162,9 +162,17 @@ function enviarResultadoPorEmail(nombre, email, L) {
       sombra: perfil.sombra[L],
       practica: practicaTxt,
     }),
-  }).catch(function (err) {
-    console.error("No se pudo enviar el email del resultado:", err);
-  });
+  })
+    .then(function (res) {
+      if (!res.ok) {
+        return res.text().then(function (txt) {
+          console.error("Fallo al enviar el email del resultado, status " + res.status + ":", txt);
+        });
+      }
+    })
+    .catch(function (err) {
+      console.error("No se pudo enviar el email del resultado:", err);
+    });
 }
 
 const PERFILES = {

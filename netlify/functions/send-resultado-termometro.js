@@ -13,10 +13,15 @@ exports.handler = async function (event) {
   }
 
   try {
+    console.log("send-resultado-termometro: raw event.body =", event.body, "| isBase64Encoded =", event.isBase64Encoded);
+
     const body = event.body ? JSON.parse(event.body) : {};
     const { nombre, email, lang, perfilNombre, posicion, luz, sombra, practica } = body;
 
+    console.log("send-resultado-termometro: parsed fields =", { nombre, email, lang, perfilNombre });
+
     if (!email || !nombre || !perfilNombre) {
+      console.log("send-resultado-termometro: validation failed", { hasEmail: !!email, hasNombre: !!nombre, hasPerfilNombre: !!perfilNombre });
       return { statusCode: 400, body: JSON.stringify({ error: "Faltan datos obligatorios." }) };
     }
 
