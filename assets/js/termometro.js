@@ -161,6 +161,8 @@ function enviarResultadoPorEmail(nombre, email, L) {
       luz: perfil.luz[L],
       sombra: perfil.sombra[L],
       practica: practicaTxt,
+      impacto: perfil.impacto[L],
+      crecimiento: perfil.crecimiento[L],
     }),
   })
     .then(function (res) {
@@ -190,6 +192,14 @@ const PERFILES = {
       es: "El coste de ese mismo patrón aparece con el tiempo, no de inmediato: cuando el control y la urgencia se convierten en el modo por defecto, el equipo aprende a esperar instrucciones en lugar de pensar por sí mismo. La erosión de la confianza y de la iniciativa suele ser silenciosa — se nota primero en la calidad de las ideas que dejan de llegarte, no en una queja explícita.",
       en: "The cost of this same pattern shows up over time, not immediately: when control and urgency become the default mode, the team learns to wait for instructions instead of thinking for itself. The erosion of trust and initiative tends to be quiet — you notice it first in the quality of ideas that stop reaching you, not in an explicit complaint.",
     },
+    impacto: {
+      es: "Si este patrón se mantiene sin ajuste, el coste no aparece de inmediato — aparece en seis meses, en un año: un equipo que ha dejado de traerte problemas hasta que son urgentes, decisiones importantes tomadas en solitario en lugar de compartidas, y resultados que dependen enteramente de tu presencia, absorbiendo cada vez más de tu tiempo. Es un liderazgo que funciona, hasta que tú faltas un día.",
+      en: "If this pattern continues unchecked, the cost doesn&rsquo;t show up right away — it shows up in six months, in a year: a team that has stopped bringing you problems until they&rsquo;re urgent, important decisions made alone instead of shared, and results that depend entirely on your presence, taking up more and more of your time. It&rsquo;s leadership that works, until the day you&rsquo;re not there.",
+    },
+    crecimiento: {
+      es: "Un patrón más creativo en esta misma dimensión no significa soltar el control de golpe — significa delegar la decisión antes de que se vuelva urgente, y usar tu urgencia natural para acelerar lo importante, no para absorberlo todo. Los líderes que hacen ese giro no pierden velocidad: ganan un equipo que se mueve a su mismo ritmo incluso cuando no están mirando.",
+      en: "A more creative pattern in this same dimension doesn&rsquo;t mean letting go of control overnight — it means delegating the decision before it becomes urgent, and channeling your natural urgency into accelerating what matters instead of absorbing everything yourself. Leaders who make that shift don&rsquo;t lose speed — they gain a team that moves at their pace even when they&rsquo;re not watching.",
+    },
   },
   estratega: {
     nombre: { es: "Estratega en construcción", en: "Strategist in progress" },
@@ -205,6 +215,14 @@ const PERFILES = {
       es: "El riesgo está precisamente en esa inconsistencia: tu equipo puede no lograr identificar un patrón estable en cómo respondes, lo que genera incertidumbre incluso cuando tus decisiones individuales son buenas. Y bajo presión real — no la de este test, sino la de una crisis genuina — la dimensión donde puntuaste más bajo suele ser la primera en ceder, justo cuando más visible eres.",
       en: "The risk sits precisely in that inconsistency: your team may struggle to read a stable pattern in how you respond, which creates uncertainty even when your individual decisions are good. And under real pressure — not this test&rsquo;s, but a genuine crisis — the dimension where you scored lowest tends to be the first to give way, right when you&rsquo;re most visible.",
     },
+    impacto: {
+      es: "Sin un eje más estable, el riesgo no es que falles en una dimensión — es que tu equipo no logre anticipar qué versión tuya se va a presentar en la próxima crisis, y empiece a gestionar esa incertidumbre en lugar de gestionar el problema real. Bajo presión sostenida, la inconsistencia se paga en la velocidad de reacción del equipo, no solo en tu propia energía.",
+      en: "Without a steadier axis, the risk isn&rsquo;t failing in one dimension — it&rsquo;s that your team can&rsquo;t anticipate which version of you will show up in the next crisis, and starts managing that uncertainty instead of the actual problem. Under sustained pressure, inconsistency is paid for in your team&rsquo;s reaction speed, not just your own energy.",
+    },
+    crecimiento: {
+      es: "Un patrón más creativo aquí no es elegir un solo modo y quedarte en él — es hacer visible, a propósito, qué modo estás usando y por qué, para que tu equipo deje de adivinar. La flexibilidad que ya tienes se convierte en una ventaja real en cuanto se vuelve predecible para los demás, no solo intencional para ti.",
+      en: "A more creative pattern here isn&rsquo;t picking one mode and staying in it — it&rsquo;s making visible, on purpose, which mode you&rsquo;re using and why, so your team stops guessing. The flexibility you already have becomes a real advantage once it&rsquo;s predictable to others, not just intentional to you.",
+    },
   },
   integrador: {
     nombre: { es: "Líder integrador", en: "Integrative leader" },
@@ -219,6 +237,14 @@ const PERFILES = {
     sombra: {
       es: "El riesgo típico en este nivel no es el patrón en sí, es la escala y la falsa sensación de trabajo terminado. Lo que funciona con tu equipo directo no está necesariamente probado a la escala de toda la organización, entre culturas o geografías, o en una situación que aún no has enfrentado — una crisis real, una sucesión, una fusión. Una puntuación alta puede reducir precisamente la reflexión que te trajo hasta aquí.",
       en: "The typical risk at this level isn&rsquo;t the pattern itself — it&rsquo;s scale, and a false sense that the work is done. What works with your immediate team isn&rsquo;t necessarily proven at the scale of the full organization, across cultures or geographies, or in a situation you haven&rsquo;t yet faced — a real crisis, a succession, a merger. A high score can reduce the very reflection that got you here.",
+    },
+    impacto: {
+      es: "El riesgo a este nivel no es que el patrón falle — es que deje de ponerse a prueba. Un equipo directo que funciona bien puede ocultar durante mucho tiempo que ese mismo estilo no está probado a otra escala: una organización más grande, una cultura distinta, una crisis que todavía no has vivido. El coste de no anticiparlo es alto precisamente porque llega tarde y sin aviso.",
+      en: "The risk at this level isn&rsquo;t that the pattern fails — it&rsquo;s that it stops being tested. A direct team that works well can hide, for a long time, the fact that this same style hasn&rsquo;t been proven at a different scale: a larger organization, a different culture, a crisis you haven&rsquo;t yet faced. The cost of not anticipating it is high precisely because it arrives late and without warning.",
+    },
+    crecimiento: {
+      es: "Un patrón más creativo a este nivel no es hacer más de lo mismo — es buscar activamente la situación que todavía no domina: la escala, la cultura o la crisis que pondría a prueba lo que ya funciona. Los líderes que siguen creciendo aquí no lo hacen por necesidad, sino por elección deliberada.",
+      en: "A more creative pattern at this level isn&rsquo;t doing more of the same — it&rsquo;s actively seeking out the situation you haven&rsquo;t yet mastered: the scale, the culture, or the crisis that would test what already works. Leaders who keep growing at this level do it by deliberate choice, not necessity.",
     },
   },
 };
@@ -255,20 +281,28 @@ function renderResultado(app) {
     hLuz: "What&rsquo;s working",
     hSombra: "The blind spot to watch",
     hPractica: "What this means in practice",
+    hImpacto: "What&rsquo;s at stake if nothing changes",
+    hCrecimiento: "What a more creative pattern unlocks",
     practica: `In practical terms, this means the people who work with you would likely name your strongest asset as <strong>${DIMENSIONES[dimMasFuerte].en}</strong> — and would notice, even if they don&rsquo;t always say so directly, that <strong>${DIMENSIONES[dimMasDebil].en}</strong> is where your leadership feels most strained once pressure rises.`,
     h3: "A practical recommendation",
     rec: `This week, choose a real situation where your pattern in <strong>${DIMENSIONES[dimMasDebil].en}</strong> will be tested, and decide in advance how you want to respond — before pressure decides for you.`,
-    note: `This snapshot is a quick read &mdash; 12 questions, not a full 360&deg; &mdash; inspired by a central distinction in leadership research: the difference between patterns that sustain results and relationships at once, and patterns that favor one at the expense of the other, especially under pressure. The <a href="leadership-circle-profile.html"><strong>Leadership Circle Profile</strong></a>, one of the most widely used 360&deg; assessment instruments at senior executive level internationally, measures this same distinction with the depth and statistical validation a 2-minute exercise can&rsquo;t offer. Mauro is a certified practitioner of this instrument and uses it, together with real data from your environment, in his executive coaching engagements.`,
+    noteLabel: "About this tool",
+    noteWarning: "This is not the official Leadership Circle Profile&reg;, and it does not replace it.",
+    note: `This snapshot is a quick read &mdash; 12 questions, not a full 360&deg; &mdash; inspired by a central distinction in leadership research: the difference between <strong>reactive</strong> patterns, which sustain results at the expense of relationships (or vice versa) especially under pressure, and <strong>creative</strong> patterns, which sustain both at once. The <a href="leadership-circle-profile.html"><strong>Leadership Circle Profile&reg;</strong></a>, one of the most widely used 360&deg; assessment instruments at senior executive level internationally, measures this same distinction with a depth, a number of dimensions and a statistical validation that a 2-minute exercise cannot offer. Mauro is a certified practitioner of this instrument and uses it, together with real data from your environment, in his executive coaching engagements.`,
     cta: "Book a diagnostic session (20 min, no cost)",
   } : {
     kicker: "Tu resultado",
     hLuz: "Lo que ya funciona",
     hSombra: "El punto ciego a vigilar",
     hPractica: "Qué significa esto en la práctica",
+    hImpacto: "Qué está en juego si nada cambia",
+    hCrecimiento: "Qué desbloquea un patrón más creativo",
     practica: `En términos prácticos, esto significa que las personas que trabajan contigo probablemente nombrarían tu punto más fuerte como <strong>${DIMENSIONES[dimMasFuerte].es}</strong> — y notarían, aunque no siempre te lo digan directamente, que <strong>${DIMENSIONES[dimMasDebil].es}</strong> es donde tu liderazgo se resiente más en cuanto sube la presión.`,
     h3: "Una recomendación práctica",
     rec: `Esta semana, elige una situación real donde tu patrón en <strong>${DIMENSIONES[dimMasDebil].es}</strong> se ponga a prueba, y decide de antemano cómo quieres responder — antes de que la presión decida por ti.`,
-    note: `Este termómetro es una fotografía rápida &mdash; 12 preguntas, no un 360&deg; completo &mdash; inspirada en una distinción central de la investigación en liderazgo: la diferencia entre patrones que sostienen resultados y relaciones a la vez, y patrones que priorizan uno a costa del otro, especialmente bajo presión. El <a href="leadership-circle-profile.html"><strong>Leadership Circle Profile</strong></a>, uno de los instrumentos de evaluación 360&deg; más utilizados a nivel directivo a nivel internacional, mide esta misma distinción con la profundidad y la validación estadística que un ejercicio de 2 minutos no puede ofrecer. Mauro es practicante certificado de este instrumento y lo utiliza, junto con datos reales de tu entorno, en sus procesos de coaching ejecutivo.`,
+    noteLabel: "Sobre esta herramienta",
+    noteWarning: "Este termómetro no es el Leadership Circle Profile&reg; oficial, ni lo sustituye.",
+    note: `Este termómetro es una fotografía rápida &mdash; 12 preguntas, no un 360&deg; completo &mdash; inspirada en una distinción central de la investigación en liderazgo: la diferencia entre patrones <strong>reactivos</strong>, que sostienen resultados a costa de las relaciones (o viceversa), especialmente bajo presión, y patrones <strong>creativos</strong>, que sostienen ambos a la vez. El <a href="leadership-circle-profile.html"><strong>Leadership Circle Profile&reg;</strong></a>, uno de los instrumentos de evaluación 360&deg; más utilizados a nivel directivo a nivel internacional, mide esta misma distinción con una profundidad, un número de dimensiones y una validación estadística que un ejercicio de 2 minutos no puede ofrecer. Mauro es practicante certificado de este instrumento y lo utiliza, junto con datos reales de tu entorno, en sus procesos de coaching ejecutivo.`,
     cta: "Reserva una sesión de diagnóstico (20 min, sin coste)",
   };
   app.innerHTML = `
@@ -288,11 +322,21 @@ function renderResultado(app) {
       <h3>${t.hPractica}</h3>
       <p>${t.practica}</p>
     </div>
+    <div class="mt-40" style="border-left:3px solid var(--gold); padding-left:20px;">
+      <h3>${t.hImpacto}</h3>
+      <p>${perfil.impacto[L]}</p>
+    </div>
+    <div class="mt-40" style="border-left:3px solid var(--navy); padding-left:20px;">
+      <h3>${t.hCrecimiento}</h3>
+      <p>${perfil.crecimiento[L]}</p>
+    </div>
 
     <div class="divider"></div>
     <h3>${t.h3}</h3>
     <p>${t.rec}</p>
     <div class="mt-40" style="background:var(--cream); border-radius:6px; padding:28px;">
+      <p class="small-caps" style="color:var(--gold); margin-bottom:8px;">${t.noteLabel}</p>
+      <p style="margin-bottom:10px;"><strong>${t.noteWarning}</strong></p>
       <p style="margin-bottom:18px;">${t.note}</p>
       <a href="contacto.html" class="btn btn-gold">${t.cta}</a>
     </div>
