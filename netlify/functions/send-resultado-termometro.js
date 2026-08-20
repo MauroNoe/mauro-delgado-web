@@ -33,7 +33,7 @@ exports.handler = async function (event) {
       cta: "Book a diagnostic session (20 min, no cost)",
       signature: "Mauro Delgado, PCC<br>Executive Coach &amp; Senior Consultant",
       disclaimerLabel: "About this tool",
-      disclaimer: "This is not the official Leadership Circle Profile&reg;, and it does not replace it. It's a quick, 12-question read inspired by the distinction between reactive patterns (which sustain results at the expense of relationships, or vice versa, especially under pressure) and creative patterns (which sustain both at once). The official Leadership Circle Profile&reg; measures this distinction with a depth and statistical validation this snapshot cannot offer. Mauro is a certified practitioner of that instrument.",
+      disclaimer: "This is not the official Leadership Circle Profile&reg;, and it does not replace it. It's a quick, 12-question read inspired by the distinction between reactive patterns (which sustain results at the expense of relationships, or vice versa, especially under pressure) and creative patterns (which sustain both at once). The official Leadership Circle Profile&reg; is a far deeper tool that I use in my executive coaching engagements, and that I can combine with real data from your environment to bring a fuller, more grounded picture. I'm a certified practitioner of this instrument.",
     } : {
       subject: `Tu resultado: ${perfilNombre}`,
       greeting: `Hola ${nombre},`,
@@ -46,7 +46,7 @@ exports.handler = async function (event) {
       cta: "Reserva una sesión de diagnóstico (20 min, sin coste)",
       signature: "Mauro Delgado, PCC<br>Coach Ejecutivo y Consultor Senior",
       disclaimerLabel: "Sobre esta herramienta",
-      disclaimer: "Este termómetro no es el Leadership Circle Profile&reg; oficial, ni lo sustituye. Es una fotografía rápida de 12 preguntas, inspirada en la distinción entre patrones reactivos (que sostienen resultados a costa de las relaciones, o viceversa, especialmente bajo presión) y patrones creativos (que sostienen ambos a la vez). El Leadership Circle Profile&reg; oficial mide esta distinción con una profundidad y una validación estadística que esta fotografía rápida no puede ofrecer. Mauro es practicante certificado de ese instrumento.",
+      disclaimer: "Este termómetro no es el Leadership Circle Profile&reg; oficial, ni lo sustituye. Es una fotografía rápida de 12 preguntas, inspirada en la distinción entre patrones reactivos (que sostienen resultados a costa de las relaciones, o viceversa, especialmente bajo presión) y patrones creativos (que sostienen ambos a la vez). El Leadership Circle Profile&reg; oficial es una herramienta mucho más profunda que uso en mis procesos de coaching ejecutivo, y que puedo combinar con datos reales de tu entorno de trabajo para traer una visión más amplia y cercana a la realidad. Soy practicante certificado de este instrumento.",
     };
 
     const siteUrl = process.env.SITE_URL || "https://mauro-delgado.com";

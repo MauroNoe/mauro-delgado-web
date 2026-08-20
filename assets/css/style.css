@@ -114,7 +114,7 @@ header.site-header {
   align-items: center;
   justify-content: space-between;
 }
-.logo-link img { height: 38px; }
+.logo-link img { height: 48px; }
 nav.main-nav { display: flex; align-items: center; gap: 28px; }
 nav.main-nav a {
   font-family: var(--sans);
@@ -211,10 +211,11 @@ nav.main-nav a:hover { color: var(--gold); }
 .method-line {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 34px 0;
+  background: var(--cream);
+  padding: 40px 0;
 }
 .method-line-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.method-line p { margin: 0; font-family: var(--sans); color: var(--navy); font-size: 1.15rem; }
+.method-line p { margin: 0; font-family: var(--sans); color: var(--navy); font-size: 1.2rem; font-weight: 600; }
 .method-line a { font-family: var(--sans); font-weight: 700; font-size: 0.95rem; color: var(--gold); white-space: nowrap; }
 
 /* ---------- Cards ---------- */
@@ -254,7 +255,7 @@ nav.main-nav a:hover { color: var(--gold); }
   margin-bottom: 32px;
 }
 .quote-card p.quote-text { font-style: italic; color: var(--ink); font-size: 1.05rem; }
-.quote-card .attrib { font-family: var(--sans); font-size: 0.85rem; color: var(--gray); font-weight: 600; }
+.quote-card .attrib { font-family: var(--sans); font-size: 0.92rem; color: var(--navy); font-weight: 700; margin-top: 8px; letter-spacing: 0.01em; }
 
 /* ---------- Footer ---------- */
 footer.site-footer {
@@ -330,15 +331,20 @@ footer.site-footer {
 
 .cima-line-mini {
   display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap;
-  font-family: var(--sans); font-weight: 700; font-size: 0.95rem; color: var(--navy);
+  font-family: var(--sans); font-weight: 700; font-size: 1.05rem; color: var(--navy);
   margin-top: 8px;
 }
 .cima-line-mini .arrow { color: var(--gold); font-weight: 400; }
 .cima-line-mini .cima-letter { font-size: 1.35em; color: var(--gold); font-weight: 800; }
 
 .resource-grid-item { display: block; }
-.resource-grid-item .card { height: 100%; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+.resource-grid-item .card { height: 100%; transition: box-shadow 0.2s ease, transform 0.2s ease; display: flex; flex-direction: column; }
 .resource-grid-item:hover .card { box-shadow: var(--shadow); transform: translateY(-2px); }
+.resource-grid-item .card-link {
+  display: block; margin-top: 14px; font-family: var(--sans); font-weight: 700;
+  font-size: 0.82rem; color: var(--gold); letter-spacing: 0.01em;
+}
+.resource-grid-item:hover .card-link { text-decoration: underline; }
 
 .soon { opacity: 0.55; }
 .soon .card-tag { background: transparent; }

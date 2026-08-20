@@ -288,7 +288,7 @@ function renderResultado(app) {
     rec: `This week, choose a real situation where your pattern in <strong>${DIMENSIONES[dimMasDebil].en}</strong> will be tested, and decide in advance how you want to respond — before pressure decides for you.`,
     noteLabel: "About this tool",
     noteWarning: "This is not the official Leadership Circle Profile&reg;, and it does not replace it.",
-    note: `This snapshot is a quick read &mdash; 12 questions, not a full 360&deg; &mdash; inspired by a central distinction in leadership research: the difference between <strong>reactive</strong> patterns, which sustain results at the expense of relationships (or vice versa) especially under pressure, and <strong>creative</strong> patterns, which sustain both at once. The <a href="leadership-circle-profile.html"><strong>Leadership Circle Profile&reg;</strong></a>, one of the most widely used 360&deg; assessment instruments at senior executive level internationally, measures this same distinction with a depth, a number of dimensions and a statistical validation that a 2-minute exercise cannot offer. Mauro is a certified practitioner of this instrument and uses it, together with real data from your environment, in his executive coaching engagements.`,
+    note: `This snapshot is a quick read &mdash; 12 questions, not a full 360&deg; &mdash; inspired by a central distinction in leadership research: the difference between <strong>reactive</strong> patterns, which sustain results at the expense of relationships (or vice versa) especially under pressure, and <strong>creative</strong> patterns, which sustain both at once. The <a href="leadership-circle-profile.html"><strong>Leadership Circle Profile&reg;</strong></a> is a far deeper tool &mdash; one of the most widely used 360&deg; assessment instruments at senior executive level internationally &mdash; that I use in my executive coaching engagements, and that I can combine with real data from your environment to bring a fuller, more grounded picture. I&rsquo;m a certified practitioner of this instrument.`,
     cta: "Book a diagnostic session (20 min, no cost)",
   } : {
     kicker: "Tu resultado",
@@ -302,7 +302,7 @@ function renderResultado(app) {
     rec: `Esta semana, elige una situación real donde tu patrón en <strong>${DIMENSIONES[dimMasDebil].es}</strong> se ponga a prueba, y decide de antemano cómo quieres responder — antes de que la presión decida por ti.`,
     noteLabel: "Sobre esta herramienta",
     noteWarning: "Este termómetro no es el Leadership Circle Profile&reg; oficial, ni lo sustituye.",
-    note: `Este termómetro es una fotografía rápida &mdash; 12 preguntas, no un 360&deg; completo &mdash; inspirada en una distinción central de la investigación en liderazgo: la diferencia entre patrones <strong>reactivos</strong>, que sostienen resultados a costa de las relaciones (o viceversa), especialmente bajo presión, y patrones <strong>creativos</strong>, que sostienen ambos a la vez. El <a href="leadership-circle-profile.html"><strong>Leadership Circle Profile&reg;</strong></a>, uno de los instrumentos de evaluación 360&deg; más utilizados a nivel directivo a nivel internacional, mide esta misma distinción con una profundidad, un número de dimensiones y una validación estadística que un ejercicio de 2 minutos no puede ofrecer. Mauro es practicante certificado de este instrumento y lo utiliza, junto con datos reales de tu entorno, en sus procesos de coaching ejecutivo.`,
+    note: `Este termómetro es una fotografía rápida &mdash; 12 preguntas, no un 360&deg; completo &mdash; inspirada en una distinción central de la investigación en liderazgo: la diferencia entre patrones <strong>reactivos</strong>, que sostienen resultados a costa de las relaciones (o viceversa), especialmente bajo presión, y patrones <strong>creativos</strong>, que sostienen ambos a la vez. El <a href="leadership-circle-profile.html"><strong>Leadership Circle Profile&reg;</strong></a> es una herramienta mucho más profunda &mdash; uno de los instrumentos de evaluación 360&deg; más utilizados a nivel directivo internacionalmente &mdash; que uso en mis procesos de coaching ejecutivo, y que puedo combinar con datos reales de tu entorno de trabajo para traer una visión más amplia y cercana a la realidad. Soy practicante certificado de este instrumento.`,
     cta: "Reserva una sesión de diagnóstico (20 min, sin coste)",
   };
   app.innerHTML = `
@@ -338,7 +338,7 @@ function renderResultado(app) {
       <p class="small-caps" style="color:var(--gold); margin-bottom:8px;">${t.noteLabel}</p>
       <p style="margin-bottom:10px;"><strong>${t.noteWarning}</strong></p>
       <p style="margin-bottom:18px;">${t.note}</p>
-      <a href="contacto.html" class="btn btn-gold">${t.cta}</a>
+      <a href="contacto.html?interes=diagnostico" class="btn btn-gold">${t.cta}</a>
     </div>
   `;
 }

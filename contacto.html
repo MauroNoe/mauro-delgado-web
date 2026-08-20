@@ -40,28 +40,44 @@
 
 <section class="section-tight">
   <div class="container" style="max-width:640px;">
-    <form name="contacto" method="POST" data-netlify="true" action="/gracias.html">
+    <form name="contacto" method="POST" data-netlify="true" action="/gracias.html" novalidate id="contactoForm">
       <input type="hidden" name="form-name" value="contacto">
       <div style="margin-bottom:16px;">
-        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>Nombre</span><span data-i18n-en>Name</span></label>
+        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>Nombre</span><span data-i18n-en>Name</span> <span style="color:var(--gold);">*</span></label>
         <input required type="text" name="nombre" style="width:100%; padding:13px; border:1px solid var(--border); border-radius:4px; font-family:var(--sans);">
       </div>
       <div style="margin-bottom:16px;">
-        <label class="small-caps" style="display:block; margin-bottom:6px;">Email</label>
+        <label class="small-caps" style="display:block; margin-bottom:6px;">Email <span style="color:var(--gold);">*</span></label>
         <input required type="email" name="email" style="width:100%; padding:13px; border:1px solid var(--border); border-radius:4px; font-family:var(--sans);">
       </div>
       <div style="margin-bottom:16px;">
-        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>Cargo actual</span><span data-i18n-en>Current role</span></label>
+        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>Cargo actual</span><span data-i18n-en>Current role</span> <span style="color:var(--gold);">*</span></label>
         <input required type="text" name="cargo" style="width:100%; padding:13px; border:1px solid var(--border); border-radius:4px; font-family:var(--sans);">
       </div>
       <div style="margin-bottom:16px;">
-        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>Empresa y tamaño aproximado del equipo/organización</span><span data-i18n-en>Company and approximate team/organization size</span></label>
+        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>Empresa y tamaño aproximado del equipo/organización</span><span data-i18n-en>Company and approximate team/organization size</span> <span style="color:var(--gold);">*</span></label>
         <input required type="text" name="empresa" style="width:100%; padding:13px; border:1px solid var(--border); border-radius:4px; font-family:var(--sans);">
       </div>
+      <div style="margin-bottom:16px;">
+        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>¿Qué te interesa?</span><span data-i18n-en>What are you interested in?</span> <span style="color:var(--gold);">*</span></label>
+        <select required name="interes" id="interesSelect" style="width:100%; padding:13px; border:1px solid var(--border); border-radius:4px; font-family:var(--sans); background:var(--white);">
+          <option value="" data-i18n-es>Selecciona una opción</option>
+          <option value="" data-i18n-en>Select an option</option>
+          <option value="Sesión estratégica" data-i18n-es>Sesión estratégica (coaching / consultoría)</option>
+          <option value="Strategic session" data-i18n-en>Strategic session (coaching / consulting)</option>
+          <option value="Diagnóstico Leadership Circle" data-i18n-es>Diagnóstico con Leadership Circle Profile®</option>
+          <option value="Leadership Circle diagnostic" data-i18n-en>Leadership Circle Profile® diagnostic</option>
+          <option value="Taller o evento" data-i18n-es>Un taller o evento</option>
+          <option value="Workshop or event" data-i18n-en>A workshop or event</option>
+          <option value="Otro" data-i18n-es>Otro</option>
+          <option value="Other" data-i18n-en>Other</option>
+        </select>
+      </div>
       <div style="margin-bottom:24px;">
-        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>¿Qué te gustaría trabajar? (breve)</span><span data-i18n-en>What would you like to work on? (brief)</span></label>
+        <label class="small-caps" style="display:block; margin-bottom:6px;"><span data-i18n-es>¿Qué te gustaría trabajar? (breve)</span><span data-i18n-en>What would you like to work on? (brief)</span> <span style="color:var(--gold);">*</span></label>
         <textarea required name="mensaje" rows="5" style="width:100%; padding:13px; border:1px solid var(--border); border-radius:4px; font-family:var(--sans);"></textarea>
       </div>
+      <p id="formError" style="display:none; color:#b3452c; font-family:var(--sans); font-size:0.85rem; margin-bottom:14px;"></p>
       <button type="submit" class="btn btn-gold" style="width:100%;"><span data-i18n-es>Solicitar sesión estratégica</span><span data-i18n-en>Apply for strategic session</span></button>
       <p style="font-family:var(--sans); font-size:0.8rem; color:var(--gray); text-align:center; margin-top:14px;">
         <span data-i18n-es>Reviso cada solicitud personalmente. Si tu situación encaja, te escribo para proponerte fecha.</span>
@@ -71,10 +87,14 @@
 
     <div class="divider"></div>
 
-    <div class="grid grid-2">
+    <div class="grid grid-3 text-center">
       <div>
         <h4><span data-i18n-es>Teléfono</span><span data-i18n-en>Phone</span></h4>
         <p><a href="tel:+34695691086">+34 695 691 086</a></p>
+      </div>
+      <div>
+        <h4>WhatsApp</h4>
+        <p><a href="https://wa.me/34695691086" target="_blank" rel="noopener"><span data-i18n-es>Escríbeme</span><span data-i18n-en>Message me</span></a></p>
       </div>
       <div>
         <h4>LinkedIn</h4>
@@ -83,6 +103,53 @@
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    // Preselecciona "Interés" según el enlace de origen (?interes=estrategica|diagnostico|taller)
+    var params = new URLSearchParams(window.location.search);
+    var origen = params.get('interes');
+    var select = document.getElementById('interesSelect');
+    if (select && origen) {
+      var map = { estrategica: 0, diagnostico: 1, taller: 2 };
+      var isEn = document.documentElement.getAttribute('lang') === 'en';
+      var targets = {
+        estrategica: isEn ? 'Strategic session' : 'Sesión estratégica',
+        diagnostico: isEn ? 'Leadership Circle diagnostic' : 'Diagnóstico Leadership Circle',
+        taller: isEn ? 'Workshop or event' : 'Taller o evento'
+      };
+      if (targets[origen]) { select.value = targets[origen]; }
+    }
+
+    // Validación propia (bilingüe) en lugar de los mensajes nativos del navegador
+    var form = document.getElementById('contactoForm');
+    var errorBox = document.getElementById('formError');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        var isEn = document.documentElement.getAttribute('lang') === 'en';
+        var required = form.querySelectorAll('[required]');
+        var firstInvalid = null;
+        required.forEach(function (field) {
+          field.style.borderColor = 'var(--border)';
+          if (!field.value || (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value))) {
+            field.style.borderColor = '#b3452c';
+            if (!firstInvalid) firstInvalid = field;
+          }
+        });
+        if (firstInvalid) {
+          e.preventDefault();
+          errorBox.textContent = isEn
+            ? 'Please complete all required fields with a valid format before submitting.'
+            : 'Por favor, completa todos los campos obligatorios con un formato válido antes de enviar.';
+          errorBox.style.display = 'block';
+          firstInvalid.focus();
+        } else {
+          errorBox.style.display = 'none';
+        }
+      });
+    }
+  })();
+</script>
 
 <footer class="site-footer">
   <div class="container">
@@ -102,9 +169,9 @@
       </div>
       <div class="footer-col">
         <h4><span data-i18n-es>Legal</span><span data-i18n-en>Legal</span></h4>
-        <div><a href="#"><span data-i18n-es>Política de Privacidad</span><span data-i18n-en>Privacy Policy</span></a></div>
-        <div><a href="#"><span data-i18n-es>Aviso Legal</span><span data-i18n-en>Legal Notice</span></a></div>
-        <div><a href="#"><span data-i18n-es>Cookies</span><span data-i18n-en>Cookies</span></a></div>
+        <div><a href="privacidad.html"><span data-i18n-es>Política de Privacidad</span><span data-i18n-en>Privacy Policy</span></a></div>
+        <div><a href="aviso-legal.html"><span data-i18n-es>Aviso Legal</span><span data-i18n-en>Legal Notice</span></a></div>
+        <div><a href="cookies.html"><span data-i18n-es>Cookies</span><span data-i18n-en>Cookies</span></a></div>
       </div>
     </div>
     <div class="footer-bottom">
