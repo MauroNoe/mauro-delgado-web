@@ -1,0 +1,38 @@
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="700" height="260" fill="#FFFFFF"/>
+  <text x="350" y="24" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="1" fill="#0B2545">FIVE COMPONENTS OF EMOTIONAL INTELLIGENCE</text>
+
+  <g font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    <rect x="10" y="90" width="120" height="90" rx="6" fill="#0B2545"/>
+    <text x="70" y="128">Self-</text>
+    <text x="70" y="144">Awareness</text>
+
+    <rect x="150" y="90" width="120" height="90" rx="6" fill="#173B6B"/>
+    <text x="210" y="128">Self-</text>
+    <text x="210" y="144">Regulation</text>
+
+    <rect x="290" y="90" width="120" height="90" rx="6" fill="#B08D57"/>
+    <text x="350" y="136">Motivation</text>
+
+    <rect x="430" y="90" width="120" height="90" rx="6" fill="#173B6B"/>
+    <text x="490" y="136">Empathy</text>
+
+    <rect x="570" y="90" width="120" height="90" rx="6" fill="#0B2545"/>
+    <text x="630" y="128">Social</text>
+    <text x="630" y="144">Skill</text>
+  </g>
+
+  <g stroke="#8b93a1" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="130" y1="135" x2="148" y2="135"/>
+    <line x1="270" y1="135" x2="288" y2="135"/>
+    <line x1="410" y1="135" x2="428" y2="135"/>
+    <line x1="550" y1="135" x2="568" y2="135"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#8b93a1"/>
+    </marker>
+  </defs>
+
+  <text x="350" y="225" text-anchor="middle" font-size="12" fill="#5b6472">Self-awareness comes first — the other four build on it.</text>
+</svg>

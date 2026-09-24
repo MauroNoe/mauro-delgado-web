@@ -1,0 +1,22 @@
+<svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="500" height="420" fill="#FFFFFF"/>
+  <text x="250" y="26" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="1" fill="#0B2545">THE THREE LEGS OF TRUST</text>
+
+  <polygon points="250,60 440,340 60,340" fill="#F5F3EE" stroke="#B08D57" stroke-width="2"/>
+  <circle cx="250" cy="250" r="55" fill="#0B2545"/>
+  <text x="250" y="255" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">TRUST</text>
+
+  <g font-size="13" font-weight="700" fill="#0B2545" text-anchor="middle">
+    <text x="250" y="90">Authenticity</text>
+    <text x="250" y="108" font-size="11" font-weight="400" fill="#5b6472">Do they experience</text>
+    <text x="250" y="123" font-size="11" font-weight="400" fill="#5b6472">the real you?</text>
+
+    <text x="90" y="375">Logic</text>
+    <text x="90" y="393" font-size="11" font-weight="400" fill="#5b6472">Do they trust your</text>
+    <text x="90" y="408" font-size="11" font-weight="400" fill="#5b6472">reasoning?</text>
+
+    <text x="410" y="375">Empathy</text>
+    <text x="410" y="393" font-size="11" font-weight="400" fill="#5b6472">Do they believe you're</text>
+    <text x="410" y="408" font-size="11" font-weight="400" fill="#5b6472">invested in them?</text>
+  </g>
+</svg>

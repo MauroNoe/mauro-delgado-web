@@ -1,0 +1,20 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="600" height="300" fill="#FFFFFF"/>
+  <text x="300" y="26" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="1" fill="#0B2545">WHAT EXECUTIVE PRESENCE IS MADE OF</text>
+
+  <g font-size="13" font-weight="700" fill="#0B2545">
+    <text x="20" y="90">Gravitas</text>
+    <rect x="20" y="100" width="450" height="30" fill="#0B2545"/>
+    <text x="480" y="122" fill="#0B2545">67%</text>
+
+    <text x="20" y="160">Communication</text>
+    <rect x="20" y="170" width="188" height="30" fill="#173B6B"/>
+    <text x="218" y="192" fill="#0B2545">28%</text>
+
+    <text x="20" y="230">Appearance</text>
+    <rect x="20" y="240" width="34" height="30" fill="#B08D57"/>
+    <text x="64" y="262" fill="#0B2545">5%</text>
+  </g>
+
+  <text x="300" y="290" text-anchor="middle" font-size="12" fill="#5b6472">Adapted from Sylvia Ann Hewlett's Executive Presence research.</text>
+</svg>

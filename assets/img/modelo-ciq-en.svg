@@ -1,0 +1,28 @@
+<svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="560" height="420" fill="#FFFFFF"/>
+  <text x="280" y="26" text-anchor="middle" font-size="14" font-weight="700" letter-spacing="1" fill="#0B2545">FOUR COMPETENCIES OF THE CONFLICT-INTELLIGENT LEADER</text>
+
+  <g transform="translate(60,55)">
+    <rect x="0" y="0" width="200" height="150" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="100" y="65" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">Self-Awareness &amp;</text>
+    <text x="100" y="85" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">Self-Regulation</text>
+    <text x="100" y="112" text-anchor="middle" font-size="11" fill="#5b6472">Stay calm and strategic</text>
+
+    <rect x="220" y="0" width="200" height="150" fill="#0B2545"/>
+    <text x="320" y="65" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Social-Conflict</text>
+    <text x="320" y="85" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Skill</text>
+    <text x="320" y="112" text-anchor="middle" font-size="11" fill="#cba876">Listen deeply, check bias</text>
+
+    <rect x="0" y="170" width="200" height="150" fill="#0B2545"/>
+    <text x="100" y="235" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Situational</text>
+    <text x="100" y="255" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Adaptivity</text>
+    <text x="100" y="282" text-anchor="middle" font-size="11" fill="#cba876">Match approach to context</text>
+
+    <rect x="220" y="170" width="200" height="150" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="320" y="235" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">Systemic</text>
+    <text x="320" y="255" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">Wisdom</text>
+    <text x="320" y="282" text-anchor="middle" font-size="11" fill="#5b6472">See the wider, longer-term forces</text>
+  </g>
+
+  <text x="280" y="400" text-anchor="middle" font-size="12" fill="#5b6472">Adapted from Peter T. Coleman's Conflict Intelligence (CIQ) research, HBR 2025.</text>
+</svg>
