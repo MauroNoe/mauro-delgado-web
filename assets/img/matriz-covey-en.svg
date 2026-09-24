@@ -1,0 +1,44 @@
+<svg viewBox="0 0 600 540" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="600" height="540" fill="#FFFFFF"/>
+
+  <!-- Axis titles -->
+  <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545">URGENT</text>
+  <text x="300" y="518" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545">NOT URGENT</text>
+  <text x="26" y="270" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545" transform="rotate(-90 26 270)">IMPORTANT</text>
+  <text x="576" y="270" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545" transform="rotate(90 576 270)">NOT IMPORTANT</text>
+
+  <!-- Grid -->
+  <g transform="translate(60,50)">
+    <!-- Quadrant I: Urgent + Important -->
+    <rect x="0" y="0" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="115" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#B08D57">I</text>
+    <text x="115" y="55" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">MANAGE</text>
+    <text x="115" y="85" text-anchor="middle" font-size="12" fill="#5b6472">Crises</text>
+    <text x="115" y="105" text-anchor="middle" font-size="12" fill="#5b6472">Deadline pressure</text>
+    <text x="115" y="125" text-anchor="middle" font-size="12" fill="#5b6472">Urgent problems</text>
+
+    <!-- Quadrant II: Not Urgent + Important -->
+    <rect x="250" y="0" width="230" height="200" fill="#0B2545"/>
+    <text x="365" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#B08D57">II</text>
+    <text x="365" y="55" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">FOCUS HERE</text>
+    <text x="365" y="85" text-anchor="middle" font-size="12" fill="#cfd8e6">Strategic thinking</text>
+    <text x="365" y="105" text-anchor="middle" font-size="12" fill="#cfd8e6">Relationship building</text>
+    <text x="365" y="125" text-anchor="middle" font-size="12" fill="#cfd8e6">Planning &amp; prevention</text>
+
+    <!-- Quadrant III: Urgent + Not Important -->
+    <rect x="0" y="220" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="115" y="250" text-anchor="middle" font-size="13" font-weight="700" fill="#B08D57">III</text>
+    <text x="115" y="275" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">DELEGATE</text>
+    <text x="115" y="305" text-anchor="middle" font-size="12" fill="#5b6472">Some meetings</text>
+    <text x="115" y="325" text-anchor="middle" font-size="12" fill="#5b6472">Interruptions</text>
+    <text x="115" y="345" text-anchor="middle" font-size="12" fill="#5b6472">Other people's priorities</text>
+
+    <!-- Quadrant IV: Not Urgent + Not Important -->
+    <rect x="250" y="220" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="365" y="250" text-anchor="middle" font-size="13" font-weight="700" fill="#B08D57">IV</text>
+    <text x="365" y="275" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">ELIMINATE</text>
+    <text x="365" y="305" text-anchor="middle" font-size="12" fill="#5b6472">Busy work</text>
+    <text x="365" y="325" text-anchor="middle" font-size="12" fill="#5b6472">Time wasters</text>
+    <text x="365" y="345" text-anchor="middle" font-size="12" fill="#5b6472">Low-value distractions</text>
+  </g>
+</svg>

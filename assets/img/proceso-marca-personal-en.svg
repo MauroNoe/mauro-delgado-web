@@ -1,0 +1,44 @@
+<svg viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="720" height="360" fill="#FFFFFF"/>
+
+  <!-- Row 1 -->
+  <line x1="90" y1="60" x2="630" y2="60" stroke="#e3e2df" stroke-width="2"/>
+  <g>
+    <circle cx="90" cy="60" r="30" fill="#0B2545"/><text x="90" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="90" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">PURPOSE</text>
+  </g>
+  <g>
+    <circle cx="270" cy="60" r="30" fill="#0B2545"/><text x="270" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="270" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">AUDIT</text>
+  </g>
+  <g>
+    <circle cx="450" cy="60" r="30" fill="#0B2545"/><text x="450" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="450" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">NARRATIVE</text>
+  </g>
+  <g>
+    <circle cx="630" cy="60" r="30" fill="#0B2545"/><text x="630" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="630" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">EMBODY</text>
+  </g>
+
+  <!-- connector down -->
+  <line x1="630" y1="90" x2="630" y2="170" stroke="#e3e2df" stroke-width="2"/>
+  <line x1="630" y1="170" x2="180" y2="170" stroke="#e3e2df" stroke-width="2"/>
+
+  <!-- Row 2 -->
+  <g>
+    <circle cx="630" cy="200" r="30" fill="#0B2545"/><text x="630" y="206" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">5</text>
+    <text x="630" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">COMMUNICATE</text>
+  </g>
+  <g>
+    <circle cx="405" cy="200" r="30" fill="#0B2545"/><text x="405" y="206" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">6</text>
+    <text x="405" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">SOCIALIZE</text>
+  </g>
+  <g>
+    <circle cx="180" cy="200" r="30" fill="#B08D57"/><text x="180" y="206" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">7</text>
+    <text x="180" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#0B2545">REASSESS</text>
+  </g>
+
+  <line x1="630" y1="230" x2="630" y2="170" stroke="#e3e2df" stroke-width="0"/>
+
+  <text x="360" y="320" text-anchor="middle" font-size="12" fill="#8b93a1" font-style="italic">The 7-step personal branding process — an annual cycle, not a one-time exercise</text>
+</svg>

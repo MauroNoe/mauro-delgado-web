@@ -1,0 +1,30 @@
+<svg viewBox="0 0 600 540" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="600" height="540" fill="#FFFFFF"/>
+
+  <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545">VALUE OF EACH POLE</text>
+  <text x="300" y="518" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545">RISK IF THAT POLE DOMINATES</text>
+  <text x="26" y="270" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545" transform="rotate(-90 26 270)">CONTROL</text>
+  <text x="576" y="270" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545" transform="rotate(90 576 270)">DELEGATION</text>
+
+  <g transform="translate(60,50)">
+    <rect x="0" y="0" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="115" y="70" text-anchor="middle" font-size="14" font-weight="700" fill="#0B2545">Consistent quality</text>
+    <text x="115" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#0B2545">Fast decisions</text>
+    <text x="115" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#0B2545">Lower short-term risk</text>
+
+    <rect x="250" y="0" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="365" y="70" text-anchor="middle" font-size="14" font-weight="700" fill="#0B2545">Team capability grows</text>
+    <text x="365" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#0B2545">Business scales</text>
+    <text x="365" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#0B2545">Leader's time freed up</text>
+
+    <rect x="0" y="220" width="230" height="200" fill="#0B2545"/>
+    <text x="115" y="290" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Bottleneck at the top</text>
+    <text x="115" y="315" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Team doesn't grow</text>
+    <text x="115" y="340" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Leader burnout</text>
+
+    <rect x="250" y="220" width="230" height="200" fill="#0B2545"/>
+    <text x="365" y="290" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Standards slip</text>
+    <text x="365" y="315" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Misalignment</text>
+    <text x="365" y="340" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Unmanaged risk</text>
+  </g>
+</svg>

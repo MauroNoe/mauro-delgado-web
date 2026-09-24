@@ -1,0 +1,38 @@
+<svg viewBox="0 0 600 540" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="600" height="540" fill="#FFFFFF"/>
+
+  <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545">URGENTE</text>
+  <text x="300" y="518" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545">NO URGENTE</text>
+  <text x="26" y="270" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545" transform="rotate(-90 26 270)">IMPORTANTE</text>
+  <text x="576" y="270" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545" transform="rotate(90 576 270)">NO IMPORTANTE</text>
+
+  <g transform="translate(60,50)">
+    <rect x="0" y="0" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="115" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#B08D57">I</text>
+    <text x="115" y="55" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">GESTIONAR</text>
+    <text x="115" y="85" text-anchor="middle" font-size="12" fill="#5b6472">Crisis</text>
+    <text x="115" y="105" text-anchor="middle" font-size="12" fill="#5b6472">Presión de plazos</text>
+    <text x="115" y="125" text-anchor="middle" font-size="12" fill="#5b6472">Problemas urgentes</text>
+
+    <rect x="250" y="0" width="230" height="200" fill="#0B2545"/>
+    <text x="365" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#B08D57">II</text>
+    <text x="365" y="55" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">FOCO AQUÍ</text>
+    <text x="365" y="85" text-anchor="middle" font-size="12" fill="#cfd8e6">Pensamiento estratégico</text>
+    <text x="365" y="105" text-anchor="middle" font-size="12" fill="#cfd8e6">Construir relaciones</text>
+    <text x="365" y="125" text-anchor="middle" font-size="12" fill="#cfd8e6">Planificación y prevención</text>
+
+    <rect x="0" y="220" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="115" y="250" text-anchor="middle" font-size="13" font-weight="700" fill="#B08D57">III</text>
+    <text x="115" y="275" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">DELEGAR</text>
+    <text x="115" y="305" text-anchor="middle" font-size="12" fill="#5b6472">Algunas reuniones</text>
+    <text x="115" y="325" text-anchor="middle" font-size="12" fill="#5b6472">Interrupciones</text>
+    <text x="115" y="345" text-anchor="middle" font-size="12" fill="#5b6472">Prioridades de otros</text>
+
+    <rect x="250" y="220" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="365" y="250" text-anchor="middle" font-size="13" font-weight="700" fill="#B08D57">IV</text>
+    <text x="365" y="275" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">ELIMINAR</text>
+    <text x="365" y="305" text-anchor="middle" font-size="12" fill="#5b6472">Trabajo de relleno</text>
+    <text x="365" y="325" text-anchor="middle" font-size="12" fill="#5b6472">Pérdidas de tiempo</text>
+    <text x="365" y="345" text-anchor="middle" font-size="12" fill="#5b6472">Distracciones de bajo valor</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 600 540" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="600" height="540" fill="#FFFFFF"/>
+
+  <text x="300" y="24" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545">HIGH POWER</text>
+  <text x="300" y="518" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545">LOW POWER</text>
+  <text x="26" y="270" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545" transform="rotate(-90 26 270)">LOW INTEREST</text>
+  <text x="576" y="270" text-anchor="middle" font-size="15" font-weight="700" letter-spacing="1" fill="#0B2545" transform="rotate(90 576 270)">HIGH INTEREST</text>
+
+  <g transform="translate(60,50)">
+    <rect x="0" y="0" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="115" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">MANAGE</text>
+    <text x="115" y="102" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">CLOSELY</text>
+    <text x="115" y="130" text-anchor="middle" font-size="12" fill="#5b6472">Keep satisfied,</text>
+    <text x="115" y="148" text-anchor="middle" font-size="12" fill="#5b6472">don't over-communicate</text>
+
+    <rect x="250" y="0" width="230" height="200" fill="#0B2545"/>
+    <text x="365" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">INVOLVE &amp;</text>
+    <text x="365" y="102" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">CONVINCE</text>
+    <text x="365" y="130" text-anchor="middle" font-size="12" fill="#cfd8e6">Your key</text>
+    <text x="365" y="148" text-anchor="middle" font-size="12" fill="#cfd8e6">stakeholders</text>
+
+    <rect x="0" y="220" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="115" y="300" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">MONITOR</text>
+    <text x="115" y="325" text-anchor="middle" font-size="12" fill="#5b6472">Minimum effort</text>
+
+    <rect x="250" y="220" width="230" height="200" fill="#F5F3EE" stroke="#e3e2df"/>
+    <text x="365" y="290" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">KEEP</text>
+    <text x="365" y="312" text-anchor="middle" font-size="16" font-weight="700" fill="#0B2545">INFORMED</text>
+    <text x="365" y="338" text-anchor="middle" font-size="12" fill="#5b6472">Future allies</text>
+  </g>
+</svg>
