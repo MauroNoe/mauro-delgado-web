@@ -308,6 +308,26 @@ footer.site-footer {
   margin-bottom: 16px;
 }
 
+/* ---------- Exercise / framework box (Recursos Nivel 1) ---------- */
+.exercise-box {
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 26px 28px;
+  margin: 24px 0;
+}
+.exercise-box .exercise-label {
+  display: block;
+  font-family: var(--sans); font-weight: 700; font-size: 0.72rem;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 10px;
+}
+.exercise-box h4 { margin: 0 0 14px; color: var(--navy); }
+.exercise-box ol { margin: 0; padding-left: 22px; }
+.exercise-box ol li { margin-bottom: 10px; color: var(--navy); line-height: 1.55; }
+.exercise-box ol li:last-child { margin-bottom: 0; }
+.exercise-box p.exercise-note { margin: 14px 0 0; font-size: 0.88rem; color: var(--gray); }
+
 /* ---------- FAQ ---------- */
 .faq-item { border-bottom: 1px solid var(--border); padding: 22px 0; }
 .faq-item h4 { margin-bottom: 8px; font-family: var(--sans); }
