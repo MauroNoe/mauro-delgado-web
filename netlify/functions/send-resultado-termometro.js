@@ -3,7 +3,7 @@
 //
 // Variables de entorno necesarias (configurar en Netlify, NUNCA en el código):
 //   RESEND_API_KEY  -> API key de Resend (re_...)
-//   RESEND_FROM     -> remitente verificado, ej. "Mauro Delgado <hola@mauro-delgado.com>"
+//   RESEND_FROM     -> remitente verificado, ej. "Mauro Delgado <mauro@mauro-delgado.com>"
 //                      Mientras el dominio no esté verificado en Resend, se puede
 //                      usar "Mauro Delgado <onboarding@resend.dev>" para pruebas.
 
