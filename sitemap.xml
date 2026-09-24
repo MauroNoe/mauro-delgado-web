@@ -1,93 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mauro-delgado.com/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/servicios.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/servicios.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/servicios.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/servicios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/servicios.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/sobre-mi.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/sobre-mi.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/sobre-mi.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/sobre-mi.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/contacto.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/contacto.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/contacto.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/contacto.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/eventos.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/eventos.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/eventos.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/eventos.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/leadership-circle-profile.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/leadership-circle-profile.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/leadership-circle-profile.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/leadership-circle-profile.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/leadership-circle-profile.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/leadership-circle-profile.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/leadership-circle-profile.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/leadership-circle-profile.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/termometro.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/termometro.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/termometro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/termometro.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/termometro.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/termometro.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/termometro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/termometro.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/recursos.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/recursos/strategic-thinking.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/strategic-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/strategic-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/strategic-thinking.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos/strategic-thinking.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/strategic-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/strategic-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/strategic-thinking.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/recursos/prioritization-and-time.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/prioritization-and-time.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/prioritization-and-time.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/prioritization-and-time.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos/prioritization-and-time.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/prioritization-and-time.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/prioritization-and-time.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/prioritization-and-time.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/recursos/influence-and-persuasion.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/influence-and-persuasion.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/influence-and-persuasion.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/influence-and-persuasion.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos/influence-and-persuasion.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/influence-and-persuasion.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/influence-and-persuasion.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/influence-and-persuasion.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/recursos/high-performing-teams.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/high-performing-teams.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/high-performing-teams.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/high-performing-teams.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos/high-performing-teams.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/high-performing-teams.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/high-performing-teams.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/high-performing-teams.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/recursos/leading-change.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/leading-change.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/leading-change.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/leading-change.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos/leading-change.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/leading-change.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/leading-change.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/leading-change.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/recursos/leading-through-convergence.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/leading-through-convergence.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/leading-through-convergence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/leading-through-convergence.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos/leading-through-convergence.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/leading-through-convergence.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/leading-through-convergence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/leading-through-convergence.html"/>
   </url>
   <url>
     <loc>https://mauro-delgado.com/recursos/personal-branding.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/personal-branding.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/personal-branding.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/personal-branding.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos/personal-branding.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/personal-branding.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/personal-branding.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/personal-branding.html"/>
   </url>
 </urlset>
