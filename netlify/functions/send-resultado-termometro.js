@@ -6,6 +6,78 @@
 //   RESEND_FROM     -> remitente verificado, ej. "Mauro Delgado <mauro@mauro-delgado.com>"
 //                      Mientras el dominio no esté verificado en Resend, se puede
 //                      usar "Mauro Delgado <onboarding@resend.dev>" para pruebas.
+//   NOTIFY_EMAIL    -> (opcional) dirección(es) que reciben un aviso interno cada vez
+//                      que alguien completa el Termómetro. Admite varias separadas por
+//                      comas, ej. "mauro@mauro-delgado.com,otra@ejemplo.com".
+//                      Si no está definida, no se envía el aviso (solo console.warn).
+//                      Si el aviso falla, se registra el error pero no afecta a la
+//                      respuesta al usuario.
+
+function escapeHtml(value) {
+  return String(value == null ? "" : value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+async function sendInternalNotification({ from, nombre, email, lang, perfilNombre, posicion }) {
+  const recipients = (process.env.NOTIFY_EMAIL || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  if (recipients.length === 0) {
+    console.warn("send-resultado-termometro: NOTIFY_EMAIL no definida, no se envía aviso interno.");
+    return;
+  }
+
+  const fecha = new Date().toLocaleString("es-ES", {
+    timeZone: "Europe/Madrid",
+    dateStyle: "full",
+    timeStyle: "short",
+  });
+
+  const row = (label, value) =>
+    `<tr><td style="padding:6px 12px 6px 0; color:#6b7280; vertical-align:top;">${label}</td><td style="padding:6px 0;">${escapeHtml(value)}</td></tr>`;
+
+  const html = `
+    <div style="font-family:Arial,sans-serif; max-width:560px; margin:0 auto; color:#1f2937;">
+      <h2 style="color:#0B2545;">Nuevo Termómetro completado</h2>
+      <table style="border-collapse:collapse; font-size:14px;">
+        ${row("Nombre", nombre)}
+        ${row("Email", email)}
+        ${row("Idioma", lang === "en" ? "Inglés (en)" : "Castellano (es)")}
+        ${row("Perfil", perfilNombre)}
+        ${row("Posición", posicion)}
+        ${row("Fecha", fecha + " (Europe/Madrid)")}
+      </table>
+    </div>
+  `;
+
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${process.env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: from,
+        to: recipients,
+        reply_to: email,
+        subject: `Nuevo Termómetro completado: ${nombre} (${perfilNombre})`,
+        html: html,
+      }),
+    });
+    if (!res.ok) {
+      console.error("send-resultado-termometro: aviso interno falló, status =", res.status, await res.text());
+    }
+  } catch (err) {
+    console.error("send-resultado-termometro: aviso interno, exception =", err.message);
+  }
+}
 
 exports.handler = async function (event) {
   if (event.httpMethod !== "POST") {
@@ -96,6 +168,9 @@ exports.handler = async function (event) {
       console.error("send-resultado-termometro: Resend error, status =", resendRes.status);
       return { statusCode: 502, body: JSON.stringify({ error: "Resend error: " + errText }) };
     }
+
+    // Aviso interno: nunca debe afectar a la respuesta al usuario.
+    await sendInternalNotification({ from, nombre, email, lang: L, perfilNombre, posicion });
 
     return { statusCode: 200, headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ok: true }) };
   } catch (err) {

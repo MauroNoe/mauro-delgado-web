@@ -9,23 +9,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Selector de idioma EN/ES (inglés por defecto, persistente vía localStorage)
+  // Idioma: lo decide la URL (/es/... = es, resto = en). La preferencia guardada
+  // en localStorage ('md_lang') no sobrescribe el idioma de la página.
   var langBtn = document.querySelector('.lang-switch');
   var html = document.documentElement;
-  var saved = localStorage.getItem('md_lang');
-  if (saved) { html.setAttribute('lang', saved); }
+  var pageLang = /^\/es(\/|$)/.test(window.location.pathname) ? 'es' : 'en';
+  html.setAttribute('lang', pageLang);
   updateLangLabel();
   updateTitle();
 
   if (langBtn) {
+    // El enlace navega a la otra versión; aquí solo guardamos la preferencia.
     langBtn.addEventListener('click', function () {
-      var current = html.getAttribute('lang') === 'en' ? 'en' : 'es';
-      var next = current === 'es' ? 'en' : 'es';
-      html.setAttribute('lang', next);
-      localStorage.setItem('md_lang', next);
-      updateLangLabel();
-      updateTitle();
+      storageSet('md_lang', pageLang === 'es' ? 'en' : 'es');
     });
+  }
+
+  function storageGet(key) {
+    try { return window.localStorage.getItem(key); } catch (e) { return null; }
+  }
+
+  function storageSet(key, value) {
+    try { window.localStorage.setItem(key, value); } catch (e) {}
   }
 
   function updateLangLabel() {
@@ -48,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initCookieBanner();
 
   function initCookieBanner() {
-    if (localStorage.getItem('md_cookie_consent')) return;
+    if (storageGet('md_cookie_consent')) return;
     var isEn = html.getAttribute('lang') === 'en';
     var banner = document.createElement('div');
     banner.id = 'cookieBanner';
@@ -57,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
       '<div style="max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:20px; flex-wrap:wrap; justify-content:space-between;">' +
         '<p style="margin:0; flex:1; min-width:240px; line-height:1.5;">' +
           (isEn
-            ? 'This site uses essential technical cookies (language preference, form submission) and no third-party advertising trackers. <a href="cookies.html" style="color:#fff; text-decoration:underline;">Learn more</a>.'
-            : 'Esta web utiliza cookies técnicas esenciales (preferencia de idioma, envío de formularios) y no usa cookies de publicidad de terceros. <a href="cookies.html" style="color:#fff; text-decoration:underline;">Más información</a>.') +
+            ? 'This site uses essential technical cookies (language preference, form submission) and no third-party advertising trackers. <a href="/cookies" style="color:#fff; text-decoration:underline;">Learn more</a>.'
+            : 'Esta web utiliza cookies técnicas esenciales (preferencia de idioma, envío de formularios) y no usa cookies de publicidad de terceros. <a href="/es/cookies" style="color:#fff; text-decoration:underline;">Más información</a>.') +
         '</p>' +
         '<div style="display:flex; gap:10px; flex-shrink:0;">' +
           '<button id="cookieAccept" style="background:var(--gold); color:var(--navy); border:none; padding:10px 18px; border-radius:4px; font-weight:700; font-family:var(--sans); font-size:0.85rem; cursor:pointer;">' + (isEn ? 'Accept' : 'Aceptar') + '</button>' +
@@ -67,11 +72,11 @@ document.addEventListener('DOMContentLoaded', function () {
       '</div>';
     document.body.appendChild(banner);
     document.getElementById('cookieAccept').addEventListener('click', function () {
-      localStorage.setItem('md_cookie_consent', 'accepted');
+      storageSet('md_cookie_consent', 'accepted');
       banner.remove();
     });
     document.getElementById('cookieReject').addEventListener('click', function () {
-      localStorage.setItem('md_cookie_consent', 'essential-only');
+      storageSet('md_cookie_consent', 'essential-only');
       banner.remove();
     });
   }
