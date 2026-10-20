@@ -123,7 +123,7 @@ function renderCaptura(app) {
     fetch(window.location.pathname, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeForm({ "form-name": "termometro", nombre: nombre, email: email, "bot-field": "" }),
+      body: encodeForm({ "form-name": "termometro", nombre: nombre, email: email, idioma: L, "bot-field": "" }),
     })
       .then(function (res) {
         if (!res.ok) { throw new Error("Netlify form submission failed: " + res.status); }
