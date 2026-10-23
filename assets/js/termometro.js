@@ -123,7 +123,7 @@ function renderCaptura(app) {
     fetch(window.location.pathname, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeForm({ "form-name": "termometro", nombre: nombre, email: email, idioma: L, "bot-field": "" }),
+      body: encodeForm({ "form-name": "termometro", nombre: nombre, email: email, idioma: L, perfil: calcularResultado().perfilKey, "bot-field": "" }),
     })
       .then(function (res) {
         if (!res.ok) { throw new Error("Netlify form submission failed: " + res.status); }
@@ -261,16 +261,17 @@ function calcularResultado() {
     if (totales[k] > totales[dimMasFuerte]) dimMasFuerte = k;
   });
 
-  let perfil;
+  let perfilKey;
   if (mediaGlobal < 2.8) {
-    perfil = PERFILES.ejecutor;
+    perfilKey = "ejecutor";
   } else if (mediaGlobal < 4.0) {
-    perfil = PERFILES.estratega;
+    perfilKey = "estratega";
   } else {
-    perfil = PERFILES.integrador;
+    perfilKey = "integrador";
   }
+  const perfil = PERFILES[perfilKey];
 
-  return { perfil, totales, dimMasDebil, dimMasFuerte };
+  return { perfil, perfilKey, totales, dimMasDebil, dimMasFuerte };
 }
 
 function renderResultado(app) {
