@@ -410,3 +410,18 @@ footer.site-footer {
 html[lang="en"] [data-i18n-es] { display: none; }
 html[lang="en"] [data-i18n-en] { display: initial; }
 html[lang="en"] .cima-line-mini[data-i18n-en] { display: flex; }
+
+/* Sobre mí — marcos de referencia */
+.frameworks .small-caps { color: var(--gold); margin-bottom: 8px; font-weight: 700; }
+.frameworks p:not(.small-caps) { color: var(--navy); font-size: 1rem; line-height: 1.6; margin-bottom: 0; }
+
+/* Sobre mí — fotos TRAM Barcelona Open */
+.tram-photos { display: grid; grid-template-columns: 3fr 2fr; gap: 16px; }
+.tram-photos img { width: 100%; height: 380px; object-fit: cover; border-radius: 4px; display: block; }
+.tram-photos img:first-child { object-position: 55% 40%; }
+.tram-photos img:last-child { object-position: 50% 45%; }
+.tram-credit { font-family: var(--sans); font-size: 0.75rem; color: var(--gray-light); margin: 10px 0 0; text-align: right; }
+@media (max-width: 880px) {
+  .tram-photos { grid-template-columns: 1fr; }
+  .tram-photos img { height: 240px; }
+}
