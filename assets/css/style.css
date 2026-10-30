@@ -427,3 +427,25 @@ html[lang="en"] .cima-line-mini[data-i18n-en] { display: flex; }
 }
 .frameworks a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--gold); }
 .frameworks a:hover { color: var(--gold); }
+
+/* ---------- Página: Preparación para assessment centers ---------- */
+.ac-hero-actions { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; margin-top: 30px; }
+.ac-anchor { font-family: var(--sans); font-weight: 700; font-size: 0.9rem; color: var(--navy); border-bottom: 1px solid var(--gold); }
+.ac-link { margin-top: 14px !important; }
+.ac-link a { font-family: var(--sans); font-weight: 700; font-size: 0.85rem; color: var(--navy); border-bottom: 1px solid var(--gold); }
+.ac-caps-title { font-family: var(--sans); font-weight: 600; color: var(--navy); margin: 44px 0 14px; }
+.ac-caps { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.ac-caps a { display: inline-block; padding: 9px 16px; border: 1px solid var(--border); border-radius: 999px; background: var(--white); font-family: var(--sans); font-size: 0.88rem; color: var(--navy); transition: border-color .2s; }
+.ac-caps a:hover { border-color: var(--gold); }
+.ac-steps { list-style: none; counter-reset: acstep; padding: 0; }
+.ac-steps li { counter-increment: acstep; position: relative; padding: 0 0 30px 64px; border-left: 1px solid var(--border); margin-left: 20px; }
+.ac-steps li:last-child { border-left-color: transparent; padding-bottom: 0; }
+.ac-steps li::before { content: counter(acstep); position: absolute; left: -21px; top: -4px; width: 42px; height: 42px; border-radius: 50%; background: var(--navy); color: var(--gold-light); font-family: var(--sans); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.ac-steps h4 { margin-bottom: 6px; font-family: var(--sans); }
+.ac-steps p { color: var(--gray); margin: 0; }
+.ac-includes { gap: 26px 48px; }
+.ac-includes h4 { font-family: var(--sans); margin-bottom: 4px; padding-left: 14px; border-left: 3px solid var(--gold); }
+.ac-includes p { color: var(--gray); margin: 0; padding-left: 17px; font-size: 0.97rem; }
+.ac-dur { color: var(--gold) !important; font-weight: 700; margin-bottom: 8px !important; }
+.ac-note { font-family: var(--sans); font-size: 0.92rem; color: var(--gray); margin-top: 26px; }
+@media (max-width: 880px) { .ac-steps li { padding-left: 44px; } }

@@ -90,6 +90,8 @@
           
           <option value="Strategic session">Strategic session (coaching / consulting)</option>
           
+          <option value="Assessment center preparation">Assessment center / executive promotion preparation</option>
+          
           <option value="Leadership Circle diagnostic">Leadership Circle Profile® diagnostic</option>
           
           <option value="Workshop or event">A workshop or event</option>
@@ -140,7 +142,8 @@
       var targets = {
         estrategica: isEn ? 'Strategic session' : 'Sesión estratégica',
         diagnostico: isEn ? 'Leadership Circle diagnostic' : 'Diagnóstico Leadership Circle',
-        taller: isEn ? 'Workshop or event' : 'Taller o evento'
+        taller: isEn ? 'Workshop or event' : 'Taller o evento',
+        assessment: isEn ? 'Assessment center preparation' : 'Preparación assessment center'
       };
       if (targets[origen]) { select.value = targets[origen]; }
     }
@@ -181,6 +184,7 @@
       <div class="footer-col">
         <h4><span>Navigation</span></h4>
         <div><a href="servicios.html"><span>Services</span></a></div>
+        <div><a href="assessment-center-preparation.html"><span>Assessment centers</span></a></div>
         <div><a href="recursos.html"><span>Resources</span></a></div>
         <div><a href="eventos.html"><span>Events</span></a></div>
         <div><a href="sobre-mi.html"><span>About</span></a></div>
