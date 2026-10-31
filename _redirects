@@ -11,3 +11,7 @@
 /recursos/liderando-el-cambio.html      /recursos/leading-change.html           301
 /recursos/liderar-en-la-convergencia        /recursos/leading-through-convergence      301
 /recursos/liderar-en-la-convergencia.html   /recursos/leading-through-convergence.html 301
+
+# Evento renombrado: Sesión de Planificación Anual -> Life Planning
+/eventos/planificacion-anual       /es/eventos/life-planning.html  301
+/eventos/planificacion-anual.html  /es/eventos/life-planning.html  301

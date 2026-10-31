@@ -462,3 +462,40 @@ html[lang="en"] .cima-line-mini[data-i18n-en] { display: flex; }
 .ac-inline { color: var(--navy); border-bottom: 1px solid var(--gold); }
 .guide-refs { padding-left: 22px; font-size: 0.85rem; color: var(--gray); }
 .guide-refs li { margin-bottom: 6px; }
+
+/* ---------- Evento: Life Planning ---------- */
+.lp-sub { font-family: var(--sans); font-weight: 600; color: var(--gold); font-size: 1.05rem; letter-spacing: 0.02em; margin: -6px 0 18px; }
+.lp-langnote { font-family: var(--sans); font-size: 0.9rem; color: var(--navy); margin-top: 14px; }
+.lp-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 32px; border: 1px solid var(--border); border-radius: 6px; padding: 28px 32px; background: var(--white); }
+.lp-facts .small-caps { color: var(--gold); font-weight: 700; margin-bottom: 4px; }
+.lp-fact { font-family: var(--sans); font-weight: 600; color: var(--navy); margin: 0; }
+.lp-ics { text-align: right; margin-top: 12px; }
+.lp-ics a { font-family: var(--sans); font-weight: 700; font-size: 0.85rem; color: var(--navy); border-bottom: 1px solid var(--gold); }
+.lp-checks { list-style: none; padding: 0; margin: 24px 0 0; }
+.lp-checks li { position: relative; padding-left: 30px; margin-bottom: 14px; color: var(--ink); }
+.lp-checks li::before { content: ""; position: absolute; left: 0; top: 7px; width: 14px; height: 8px; border-left: 2px solid var(--gold); border-bottom: 2px solid var(--gold); transform: rotate(-45deg); }
+.lp-figure { margin: 0; }
+.lp-figure img { width: 100%; height: auto; border-radius: 6px; display: block; }
+.lp-figure-tall img { max-height: 560px; object-fit: cover; }
+.lp-figure figcaption { font-family: var(--sans); font-size: 0.78rem; color: var(--gray-light); margin-top: 8px; }
+.lp-seasons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.lp-season { border-top: 2px solid var(--gold); padding-top: 14px; }
+.lp-season h4 { color: var(--white); font-family: var(--sans); margin-bottom: 4px; }
+.lp-season p { color: #c9d2e0; margin: 0; }
+.lp-videos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.lp-video, .lp-iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 6px; }
+.lp-video { position: relative; cursor: pointer; background-size: cover; background-position: center; color: var(--white); display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 20px 22px; text-align: left; font: inherit; }
+.lp-play { position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%; background: var(--gold); transition: transform .2s; }
+.lp-play::after { content: ""; position: absolute; left: 26px; top: 20px; border-left: 18px solid var(--navy); border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
+.lp-video:hover .lp-play { transform: scale(1.08); }
+.lp-vname { font-family: var(--sans); font-weight: 700; font-size: 1.05rem; }
+.lp-vcta { font-family: var(--sans); font-size: 0.8rem; color: var(--gold-light); }
+.lp-vnote { font-family: var(--sans); font-size: 0.8rem; color: var(--gray); margin-top: 14px; }
+.lp-price { font-family: var(--sans); font-weight: 700; font-size: 2.6rem; color: var(--navy); margin: 6px 0 14px; line-height: 1; }
+.lp-price span { font-size: 1rem; color: var(--gray); font-weight: 600; }
+@media (max-width: 880px) {
+  .lp-facts { grid-template-columns: 1fr 1fr; padding: 22px; }
+  .lp-seasons { grid-template-columns: 1fr 1fr; }
+  .lp-videos { grid-template-columns: 1fr; }
+  .lp-ics { text-align: left; }
+}

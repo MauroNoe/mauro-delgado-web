@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mauro Delgado//Life Planning 2027//ES
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:lp2027-day1@mauro-delgado.com
+DTSTAMP:20261031T170000Z
+DTSTART:20270114T080000Z
+DTEND:20270114T170000Z
+SUMMARY:Life Planning 2027 (día 1)
+LOCATION:Mataró (Barcelona) - sede por confirmar
+DESCRIPTION:Workshop Life Planning 2027 con Mauro Delgado. https://mauro-delgado.com/es/eventos/life-planning.html
+END:VEVENT
+BEGIN:VEVENT
+UID:lp2027-day2@mauro-delgado.com
+DTSTAMP:20261031T170000Z
+DTSTART:20270115T080000Z
+DTEND:20270115T170000Z
+SUMMARY:Life Planning 2027 (día 2)
+LOCATION:Mataró (Barcelona) - sede por confirmar
+DESCRIPTION:Workshop Life Planning 2027 con Mauro Delgado. https://mauro-delgado.com/es/eventos/life-planning.html
+END:VEVENT
+END:VCALENDAR
