@@ -460,3 +460,5 @@ html[lang="en"] .cima-line-mini[data-i18n-en] { display: flex; }
 .guide-errors li { margin-bottom: 10px; }
 .guide-errors strong { color: var(--navy); }
 .ac-inline { color: var(--navy); border-bottom: 1px solid var(--gold); }
+.guide-refs { padding-left: 22px; font-size: 0.85rem; color: var(--gray); }
+.guide-refs li { margin-bottom: 6px; }

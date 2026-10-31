@@ -396,4 +396,22 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/assessment-center-guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/assessment-center-guide.html"/>
   </url>
+  <url>
+    <loc>https://mauro-delgado.com/recursos/women-leadership-barriers.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/women-leadership-barriers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/women-leadership-barriers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/women-leadership-barriers.html"/>
+  </url>
+  <url>
+    <loc>https://mauro-delgado.com/es/recursos/women-leadership-barriers.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mauro-delgado.com/recursos/women-leadership-barriers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mauro-delgado.com/es/recursos/women-leadership-barriers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mauro-delgado.com/recursos/women-leadership-barriers.html"/>
+  </url>
 </urlset>
